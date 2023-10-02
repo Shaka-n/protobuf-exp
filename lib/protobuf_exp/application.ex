@@ -17,7 +17,8 @@ defmodule ProtobufExp.Application do
       # Start Finch
       {Finch, name: ProtobufExp.Finch},
       # Start the Endpoint (http/https)
-      ProtobufExpWeb.Endpoint
+      ProtobufExpWeb.Endpoint,
+      ProtobufExp.ExperimentSupervisor
       # Start a worker by calling: ProtobufExp.Worker.start_link(arg)
       # {ProtobufExp.Worker, arg}
     ]
